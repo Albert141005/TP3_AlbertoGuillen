@@ -1,0 +1,93 @@
+body {
+    font-family: Arial, sans-serif;
+    text-align: center;
+    background-color: #f4f4f4;
+}
+
+h1.animated-title {
+    animation: slideIn 3s ease-in-out;
+}
+
+@keyframes slideIn {
+    from { transform: translateY(-30px); opacity: 0; }
+    to { transform: translateY(0); opacity: 1; }
+}
+
+.moving-image {
+    width: 200px;
+    height: 200px;
+    margin-top: 30px;
+    animation: moverDerecha 1s ease-in-out infinite;
+    transition: transform 0.5s;
+}
+
+@keyframes moverDerecha {
+    0% { transform: translateX(10px); }
+    50% { transform: translateX(20px); }
+    100% { transform: translateX(10px); }
+}
+
+img:hover {
+    transform: scale(1.1);
+}
+
+.description {
+    font-size: 1.2em;
+    color: black; /* Un color oscuro para el texto */
+    margin: 20px 0; /* Espaciado arriba y abajo */
+}
+
+
+.logo {
+    width: 200px; /* Ajusta el tamaño de la imagen si es necesario */
+    height: auto; /* Mantiene la proporción de la imagen */
+    animation: move 2s ease-in-out infinite; /* Tiempo de movimiento rápido y continuo */
+}
+
+@keyframes move {
+    0% { transform: translateX(10px); }
+    50% { transform: translateX(20px); }
+    100% { transform: translateX(10px); }
+}
+
+
+
+.button {
+    background-color: blue;
+    color: black;
+    padding: 10px 20px;
+    border: none;
+    cursor: pointer;
+    transition: background-color 0.3s;
+    display: inline-block; /* Asegúrate de que se comporta como un botón */
+    margin-top: 20px; /* Agregar un margen superior para separación */
+}
+
+.button:hover {
+    background-color: hsl(180, 11%, 95%);
+}
+
+.button:active {
+    background-color: blue;
+}
+ 
+table {
+    width: 80%;
+    margin: 20px auto;
+    border-collapse: collapse;
+}
+
+table, th, td {
+    border: 1px solid #333;
+}
+
+th, td {
+    padding: 10px;
+    text-align: left;
+}
+
+th {
+    background-color: #007bff;
+    color: white;
+}
+
